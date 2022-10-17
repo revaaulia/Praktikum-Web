@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Barang</title>
+</head>
+<center>
+<body style="max-width: 1300px; margin: auto; @media only screen and (max-width: 800px); background-color: gainsboro;">
+    <div style="padding-top: 2%; display: flex; justify-content: center; "></div>
+    <table style="width:67%; border: 2px solid black; background-color: white;">
+        <thead>
+          <tr>
+            <td align="center" style="width: 15%;">Home</td>
+            <td align="center" style="width: 5%;" >|</td>
+            <td align="center" style="width: 15%;">Generate Link</td>
+            <td align="center" style="width: 5%;">|</td>
+            <td align="center" style="width: 15%;">Transaction History</td>
+            <td align="center" style="width: 5%;">|</td>
+            <td align="center" style="width: 15%;">Policy</td>
+            <td align="center" style="width: 5%;">|</td>
+            <td align="center" style="width: 15%;">Logout</td>   
+          </tr>
+        </thead>
+    </table>
+
+    <br>
+
+    <br>
+    <form action="terima-pesanan-barang.html" method="post">
+        <table>
+            <tr>
+                <td rowspan="3" style="width: 29%;"><img src="macbook.jpg" width="199px" height="126px" style="float: 40%;"></td>
+                <div class="placeholder">
+                <td>
+                    <label for="tittle">Tittle Here</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="tittle" placeholder="MacBook Air" size="50">
+                </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="placeholder">
+                    <label for="description">Description</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <textarea name="description" placeholder="Year : 2020 &#10;Model : M1 &#10;Color : Space Gray &#10;Processor : Intel Core i5 &#10;Penyimpanan : 512GB / 8GB &#10"; cols="49" rows="6"></textarea>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="account">Account Number</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="account" placeholder="123-456-789-0" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Upload Picture</button>
+                </td>
+                <td>
+                    <label for="bank">Bank</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <select name="bank" id="bank">
+                        <option value="Mandiri">Mandiri</option>
+                        <option value="BNI">BNI</option>
+                        <option value="BRI">BRI</option>
+                        <option value="CIMB Niaga">CIMB Niaga</option>
+                    </select>
+                </td>
+            <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <label for="holder">Account Holder</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="holder" placeholder="Name Here" size="50">
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                        
+                </td>
+                <td>
+                    <label for="transaction">Transaction</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="transaction" placeholder="1" style="width: 7%;" min="1" max="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        
+                </td>
+                <td>
+                </td>
+                <td></td>
+                <td>
+                    *If the transaction is for 3 person, choose 3 from the drop-down list
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                </td>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="phone" name="transaction">
+                    <label for="phone">Send To Mobile Phone</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                </td>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="email" name="transaction">
+                    <label for="email">Send To Email</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <label for="mobilephone">Send To Mobile Phone</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" id="mobilephone" placeholder="1234567890,1234567891" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <label for="email">Send To Email</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="email" id="email" placeholder="revaauliafaradilah@gmail.com" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>  
+            </tr>
+            <tr>
+                <td> 
+                </td>
+                <td></td>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" value="Generate Nabr Link" style="background-color: rgb(30, 187, 30); color: white;">
+                    
+                </td>
+            </tr>
+            </center>
+        </table>  
+    </form>
+</body>
+</html>
+
