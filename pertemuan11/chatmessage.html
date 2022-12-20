@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Message - Reva</title>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 2000px;
+        margin: 10px 0;
+    }   
+
+    fieldset {
+        height: 2000px;
+        position: relative;
+        margin: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+        font-family: monospace,'Times New Roman', Times, serif;
+    }
+
+    section {
+        height: 300px;
+        width: 300px;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        margin: 0 auto;
+    }
+
+    div#textBox {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        border: 9px solid #439A97;
+        overflow-x: scroll;
+    }
+
+    input {
+        padding: 7px; 
+    }
+
+    button {
+        padding: 7px;
+        background-color: #CBEDD5;
+    }
+
+    .floating {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    hr {
+        margin: 3px 0;
+    }
+    </style>
+
+    <script>
+           function sendMessage() {
+            let text = document.getElementById("inputText").value;
+            let paragraph = document.createElement("P");
+            
+            paragraph.innerHTML = String(text);
+            document.getElementById("textBox").appendChild(paragraph).style.margin="10px";
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Welcome to Reva Aulia Faradilah's ChatBox</legend>
+        <section>
+            <div id="textBox">
+                <strong><p>ChatBox</p></strong>
+                <hr>
+            </div>
+            <div class="floating">
+                <input id="inputText" type="text">
+                <button type="button" onclick="sendMessage()">Send</button>
+            </div>
+        </section>
+    </fieldset>
+</body>
+</html>
